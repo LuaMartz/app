@@ -3,24 +3,42 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Send, Mail, MessageSquare, Linkedin, Instagram, Github } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
+import { sendContactStatus } from '../services/api';
 
 const Contact = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Mock submission
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
-    setFormData({ name: '', email: '', message: '' });
+    setLoading(true);
+
+    try {
+      await sendContactStatus(formData.name);
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for reaching out. I'll get back to you soon!",
+      });
+
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error(error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -119,12 +137,13 @@ const Contact = () => {
 
               <motion.button
                 type="submit"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg font-bold rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all shadow-lg hover:shadow-2xl"
+                disabled={loading}
+                whileHover={{ scale: loading ? 1 : 1.02 }}
+                whileTap={{ scale: loading ? 1 : 0.98 }}
+                className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg font-bold rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all shadow-lg hover:shadow-2xl disabled:opacity-60"
               >
                 <Send className="w-5 h-5" />
-                {t('contact.send')}
+                {loading ? "Sending..." : t('contact.send')}
               </motion.button>
             </form>
           </motion.div>
