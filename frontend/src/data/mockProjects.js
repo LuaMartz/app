@@ -1,0 +1,183 @@
+export const mockProjects = [
+  {
+    id: 1,
+    title: 'Social Media Management',
+    titleEs: 'Gestión de Redes Sociales',
+    description: 'Comprehensive social media strategy and content creation for C&B Papeles',
+    descriptionEs: 'Estrategia integral de redes sociales y creación de contenido para C&B Papeles',
+    category: 'social',
+    tags: ['Social Media', 'Content Creation', 'Marketing'],
+    tagsEs: ['Redes Sociales', 'Creación de Contenido', 'Marketing'],
+    image: 'https://via.placeholder.com/800x600/FF6B9D/FFFFFF?text=Social+Media',
+    color: '#FF6B9D',
+    year: '2024'
+  },
+  {
+    id: 2,
+    title: 'C&B Papeles Web Development',
+    titleEs: 'Desarrollo Web C&B Papeles',
+    description: 'Full-stack web development for corporate website with modern UX',
+    descriptionEs: 'Desarrollo web full-stack para sitio corporativo con UX moderno',
+    category: 'webdev',
+    tags: ['Web Development', 'React', 'UX/UI'],
+    tagsEs: ['Desarrollo Web', 'React', 'UX/UI'],
+    image: 'https://via.placeholder.com/800x600/00FF87/000000?text=C%26B+Web',
+    color: '#00FF87',
+    year: '2024'
+  },
+  {
+    id: 3,
+    title: 'Rollos & Etiquetas Web Design',
+    titleEs: 'Diseño Web Rollos & Etiquetas',
+    description: 'E-commerce web design with focus on product visualization',
+    descriptionEs: 'Diseño web e-commerce con enfoque en visualización de productos',
+    category: 'webdev',
+    tags: ['Web Design', 'E-commerce', 'UI/UX'],
+    tagsEs: ['Diseño Web', 'E-commerce', 'UI/UX'],
+    image: 'https://via.placeholder.com/800x600/6C5CE7/FFFFFF?text=Rollos+Web',
+    color: '#6C5CE7',
+    year: '2024'
+  },
+  {
+    id: 4,
+    title: 'Prionark Web Development',
+    titleEs: 'Desarrollo Web Prionark',
+    description: 'Modern web application with interactive features',
+    descriptionEs: 'Aplicación web moderna con características interactivas',
+    category: 'webdev',
+    tags: ['Development', 'Interactive', 'Frontend'],
+    tagsEs: ['Desarrollo', 'Interactivo', 'Frontend'],
+    image: 'https://via.placeholder.com/800x600/00D2FF/000000?text=Prionark',
+    color: '#00D2FF',
+    year: '2024'
+  },
+  {
+    id: 5,
+    title: 'Text Encryptor App',
+    titleEs: 'Aplicativo Encriptador de Texto',
+    description: 'Interactive text encryption application with modern UI',
+    descriptionEs: 'Aplicación de encriptación de texto interactiva con UI moderna',
+    category: 'webdev',
+    tags: ['Application', 'JavaScript', 'Security'],
+    tagsEs: ['Aplicación', 'JavaScript', 'Seguridad'],
+    image: 'https://via.placeholder.com/800x600/A29BFE/000000?text=Encryptor',
+    color: '#A29BFE',
+    year: '2024'
+  },
+  {
+    id: 6,
+    title: 'AI Prophet Prediction App',
+    titleEs: 'Aplicativo Predicción IA Prophet',
+    description: 'Machine learning prediction application with AI integration',
+    descriptionEs: 'Aplicación de predicción con aprendizaje automático e integración de IA',
+    category: 'webdev',
+    tags: ['AI', 'Machine Learning', 'Python'],
+    tagsEs: ['IA', 'Aprendizaje Automático', 'Python'],
+    image: 'https://via.placeholder.com/800x600/FD79A8/FFFFFF?text=AI+Prophet',
+    color: '#FD79A8',
+    year: '2024'
+  },
+  {
+    id: 7,
+    title: 'Perfect Web Design',
+    titleEs: 'Diseño Web Perfect',
+    description: 'Complete web design system with brand identity',
+    descriptionEs: 'Sistema completo de diseño web con identidad de marca',
+    category: 'design',
+    tags: ['Web Design', 'UI/UX', 'Brand'],
+    tagsEs: ['Diseño Web', 'UI/UX', 'Marca'],
+    image: 'https://via.placeholder.com/800x600/FDCB6E/000000?text=Perfect+Design',
+    color: '#FDCB6E',
+    year: '2024'
+  },
+  {
+    id: 8,
+    title: 'Perfect Product Design',
+    titleEs: 'Product Design Perfect',
+    description: 'User-centered product design with interactive prototypes',
+    descriptionEs: 'Diseño de producto centrado en el usuario con prototipos interactivos',
+    category: 'uxui',
+    tags: ['Product Design', 'Prototyping', 'UX'],
+    tagsEs: ['Diseño de Producto', 'Prototipado', 'UX'],
+    image: 'https://via.placeholder.com/800x600/74B9FF/000000?text=Product+Design',
+    color: '#74B9FF',
+    year: '2024'
+  },
+  {
+    id: 9,
+    title: 'Perfect Branding',
+    titleEs: 'Branding Perfect',
+    description: 'Complete brand identity system with guidelines',
+    descriptionEs: 'Sistema completo de identidad de marca con lineamientos',
+    category: 'branding',
+    tags: ['Branding', 'Identity', 'Logo Design'],
+    tagsEs: ['Branding', 'Identidad', 'Diseño de Logo'],
+    image: 'https://via.placeholder.com/800x600/E17055/FFFFFF?text=Perfect+Brand',
+    color: '#E17055',
+    year: '2023'
+  },
+  {
+    id: 10,
+    title: 'Garden Pro Product Design',
+    titleEs: 'Product Design Garden Pro',
+    description: 'Mobile app design for gardening and plant care',
+    descriptionEs: 'Diseño de app móvil para jardinería y cuidado de plantas',
+    category: 'uxui',
+    tags: ['Mobile Design', 'App Design', 'UX/UI'],
+    tagsEs: ['Diseño Móvil', 'Diseño de App', 'UX/UI'],
+    image: 'https://via.placeholder.com/800x600/55EFC4/000000?text=Garden+Pro',
+    color: '#55EFC4',
+    year: '2023'
+  },
+  {
+    id: 11,
+    title: 'Garden Pro Web Design',
+    titleEs: 'Diseño Web Garden Pro',
+    description: 'Landing page and web platform for gardening services',
+    descriptionEs: 'Página de aterrizaje y plataforma web para servicios de jardinería',
+    category: 'design',
+    tags: ['Web Design', 'Landing Page', 'UI'],
+    tagsEs: ['Diseño Web', 'Landing Page', 'UI'],
+    image: 'https://via.placeholder.com/800x600/81ECEC/000000?text=Garden+Web',
+    color: '#81ECEC',
+    year: '2023'
+  },
+  {
+    id: 12,
+    title: 'Garden Pro Branding',
+    titleEs: 'Branding Garden Pro',
+    description: 'Complete brand identity for eco-friendly gardening startup',
+    descriptionEs: 'Identidad de marca completa para startup de jardinería ecológica',
+    category: 'branding',
+    tags: ['Branding', 'Eco Design', 'Identity'],
+    tagsEs: ['Branding', 'Diseño Eco', 'Identidad'],
+    image: 'https://via.placeholder.com/800x600/00B894/FFFFFF?text=Garden+Brand',
+    color: '#00B894',
+    year: '2023'
+  }
+];
+
+export const categories = [
+  { id: 'all', nameEn: 'All Projects', nameEs: 'Todos los Proyectos' },
+  { id: 'webdev', nameEn: 'Web Development', nameEs: 'Desarrollo Web' },
+  { id: 'design', nameEn: 'Creative Design', nameEs: 'Diseño Creativo' },
+  { id: 'branding', nameEn: 'Branding', nameEs: 'Branding' },
+  { id: 'uxui', nameEn: 'UX/UI Design', nameEs: 'Diseño UX/UI' },
+  { id: 'social', nameEn: 'Social Media', nameEs: 'Redes Sociales' },
+  { id: 'animation', nameEn: 'Animation', nameEs: 'Animación' }
+];
+
+export const skills = [
+  { name: 'Figma', category: 'design', level: 95 },
+  { name: 'Illustrator', category: 'design', level: 90 },
+  { name: 'After Effects', category: 'animation', level: 88 },
+  { name: 'Blender', category: 'animation', level: 85 },
+  { name: 'Maya', category: 'animation', level: 80 },
+  { name: 'Photoshop', category: 'design', level: 92 },
+  { name: 'HTML/CSS', category: 'development', level: 90 },
+  { name: 'JavaScript', category: 'development', level: 85 },
+  { name: 'React', category: 'development', level: 82 },
+  { name: 'UX Design', category: 'uxui', level: 90 },
+  { name: 'UI Design', category: 'uxui', level: 93 },
+  { name: 'Branding', category: 'branding', level: 88 }
+];
